@@ -52,6 +52,8 @@ def scrollLastCompletedStagePosition():
 
 
 def mapSelect(screen):
+
+    count = 0
     while(True):
         if(selectAvailableStage(screen)):
             print('Available boss found!!!')
@@ -63,3 +65,7 @@ def mapSelect(screen):
 
         if(scrollLastCompletedStagePosition()):
             continue
+        else:
+            count += 1
+            if (count > 10):
+                break
