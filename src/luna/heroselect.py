@@ -1,6 +1,7 @@
 from random import random, uniform
 from time import sleep
-from src import helper, fight, date
+from src import helper, date
+from src.luna import fight
 import pyautogui
 
 
@@ -75,8 +76,8 @@ def selectHeroes(screen=None):
 
 def backToStageSelectAndWait():
     helper.clickDestinationImage('btn-back-stage-select.png')
-    print(date.dateFormatted(), ' Waiting for near 2 hours...')
-    sleep(7000)
+    print(date.dateFormatted(), ' end...')
+    raise Exception("Luna - No more heroes")
 
 
 def startFight():
@@ -129,7 +130,7 @@ def scrollHeroesList(screen):
     x, y, w, h = startScrollPosition[0]
 
     pos_x = int(x+uniform(50, 130))
-    pos_y = int(y+uniform(200, 300))
+    pos_y = int(y+uniform(200, 300) + 40)
 
     helper.moveDestination(pos_x, pos_y, 1)
     #pyautogui.moveTo(x+50, y+100, 1)

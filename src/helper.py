@@ -42,6 +42,7 @@ def clickDestinationImage(img, name=None, timeout=2, threshold=0.7):
             if(has_timed_out):
                 return False
 
+            time.sleep(0.1)
             continue
 
         x, y, w, h = matches[0]

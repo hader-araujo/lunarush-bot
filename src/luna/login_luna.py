@@ -21,7 +21,7 @@ def doLogin():
 
         login_attempts = login_attempts + 1
 
-    if clickDestinationImage('wallet-sign.png', name='sign button', timeout=8):
+    if clickDestinationImage('wallet-sign.png', name='sign button', timeout=15):
         login_attempts = login_attempts + 1
 
         if clickDestinationImage('boss-fight-mode-icon.png', name='Boss Hunt', timeout=15):
