@@ -1,3 +1,5 @@
+# Bot modificado para funcionar com Luna e SatoshiMonsters na mesma máquina
+
 # Luna Rush Auto Clicker Bot
 
 Se o aplicativo lhe ajudar de alguma forma, uma doação para ajudar a pagar a conta de luz sempre é bem vinda ;)
