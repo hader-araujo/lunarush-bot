@@ -11,32 +11,30 @@ def runMultiAccount():
     time.sleep(5)
 
     windows = []
-    title_luna = 'Luna Rush - Brave'
-    title_satoshi = 'SatoshiMonsters! - Brave'
+    title_luna = 'Luna Rush'
+    title_satoshi = 'SatoshiMonsters!'
 
     print('🆗 Start')
 
     for w in pygetwindow.getWindowsWithTitle(title_luna):
-        if w.title.lower() == title_luna.lower():
-            windows.append({
-                "window": w,
-                "title": title_luna,
-                "play_time": 10 * 60,
-                "last_play_time": 0,
-            })
+        windows.append({
+            "window": w,
+            "title": title_luna,
+            "play_time": 10 * 60,
+            "last_play_time": 0,
+        })
 
     for w in pygetwindow.getWindowsWithTitle(title_satoshi):
-        if w.title.lower() == title_satoshi.lower():
-            windows.append({
-                "window": w,
-                "title": title_satoshi,
-                "play_time": 10 * 60,
-                "last_play_time": 0,
-                "new_map_time": 1 * 60,
-                "last_new_map_time": 0,
-                # "refresh_time": 10 * 60,
-                # "last_refresh_time": 0,
-            })
+        windows.append({
+            "window": w,
+            "title": title_satoshi,
+            "play_time": 10 * 60,
+            "last_play_time": 0,
+            "new_map_time": 1 * 60,
+            "last_new_map_time": 0,
+            # "refresh_time": 10 * 60,
+            # "last_refresh_time": 0,
+        })
 
     print('Found {} window(s):'.format(len(windows)))
     for index, last in enumerate(windows):
