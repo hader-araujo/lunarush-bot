@@ -28,7 +28,7 @@ def runMultiAccount():
         windows.append({
             "window": w,
             "title": title_satoshi,
-            "play_time": 10 * 60,
+            "play_time": 25 * 60,
             "last_play_time": 0,
             "new_map_time": 1 * 60,
             "last_new_map_time": 0,

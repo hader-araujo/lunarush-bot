@@ -13,7 +13,12 @@ def luna_main():
 
     time.sleep(1)
 
+    count = 0
     while(True):
+
+        count += 1
+        if count > 20:
+            break
         try:
             screen = helper.printSreen()
             if(isLoginScreen(screen)):
